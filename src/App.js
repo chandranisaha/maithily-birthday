@@ -31,6 +31,7 @@ const pageTransition = {
 
 function App() {
   const [currentPhase, setCurrentPhase] = useState('loading');
+  const [currentPage, setCurrentPage] = useState(0);
   const [photos, setPhotos] = useState([]);
   const [error, setError] = useState(null);
   const [images, setImages] = useState([]);
@@ -153,9 +154,10 @@ function App() {
             transition={pageTransition}
           >
             <Flipbook 
-              onPageFlip={handleFlip} 
+              images={images} 
+              onFlip={handleFlip} 
+              currentPage={currentPage} 
               onPageComplete={() => handleFlip(images.length - 1)}
-              images={images}
             />
           </motion.div>
         );

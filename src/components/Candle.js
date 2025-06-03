@@ -73,7 +73,7 @@ const Candle = ({ onBlowDetected }) => {
     
     // Continue monitoring
     animationFrameId.current = requestAnimationFrame(detectBlow);
-  }, [isBlown]);
+  }, [isBlown, handleBlow]);
 
   // Initialize audio and start blow detection
   useEffect(() => {

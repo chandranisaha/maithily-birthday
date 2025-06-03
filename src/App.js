@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Flipbook from './components/Flipbook';
 import Candle from './components/Candle';
@@ -31,7 +31,6 @@ const pageTransition = {
 
 function App() {
   const [currentPhase, setCurrentPhase] = useState('loading');
-  const [currentPage, setCurrentPage] = useState(0);
   const [photos, setPhotos] = useState([]);
   const [error, setError] = useState(null);
   const [images, setImages] = useState([]);
@@ -194,7 +193,7 @@ function App() {
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <img src={photo} alt={`Photo ${index + 1}`} />
+                  <img src={photo} alt="" />
                 </motion.div>
               ))}
             </div>

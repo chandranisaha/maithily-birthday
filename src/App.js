@@ -260,34 +260,32 @@ function App() {
         </button>
       </div>
 
-      {/* Top Right: Birthday Candle/Test Mode Button (only in development) */}
-      {process.env.NODE_ENV === 'development' && (
-        <div style={{
-          position: 'fixed',
-          top: '20px',
-          right: '20px',
-          zIndex: 1000,
-        }}>
-          <button 
-            onClick={toggleTestMode}
-            className={`test-button ${testMode ? 'active' : ''}`}
-            style={{
-              padding: '10px 20px',
-              borderRadius: '20px',
-              border: 'none',
-              background: 'linear-gradient(45deg, #8B5A2B, #D2B48C)',
-              color: 'white',
-              cursor: 'pointer',
-              boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
-              fontWeight: 'bold',
-              fontSize: '14px',
-              transition: 'all 0.3s ease',
-            }}
-          >
-            {testMode ? 'Exit Test Mode' : 'Birthday Candle'}
-          </button>
-        </div>
-      )}
+      {/* Top Right: Birthday Candle/Test Mode Button */}
+      <div style={{
+        position: 'fixed',
+        top: '20px',
+        right: '20px',
+        zIndex: 1000,
+      }}>
+        <button 
+          onClick={toggleTestMode}
+          className={`test-button ${testMode ? 'active' : ''}`}
+          style={{
+            padding: '10px 20px',
+            borderRadius: '20px',
+            border: 'none',
+            background: 'linear-gradient(45deg, #8B5A2B, #D2B48C)',
+            color: 'white',
+            cursor: 'pointer',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+            fontWeight: 'bold',
+            fontSize: '14px',
+            transition: 'all 0.3s ease',
+          }}
+        >
+          {testMode ? 'Exit Test Mode' : 'Birthday Candle'}
+        </button>
+      </div>
 
       {/* Birthday Message Overlay */}
       {showBirthdayMessage && (

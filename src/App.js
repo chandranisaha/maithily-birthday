@@ -256,7 +256,7 @@ function App() {
             transition: 'all 0.3s ease',
           }}
         >
-          Birthday Message
+          birthday message?
         </button>
       </div>
 
@@ -283,7 +283,7 @@ function App() {
             transition: 'all 0.3s ease',
           }}
         >
-          {testMode ? 'Exit Test Mode' : 'Birthday Candle'}
+          {testMode ? 'exit' : 'birthday candle?'}
         </button>
       </div>
 

@@ -311,7 +311,7 @@ const Candle = ({ onBlowDetected }) => {
           } : {}
         }}
       >
-        {isBlown ?  'Happy buddayyyy' : 'Click to Blow Out Candle (microphone skill issue sorriii'}
+        {isBlown ?  'heppy buddayyyy' : 'Click to Blow Out Candle (microphone skill issue sorriii'}
       </button>
       
       {/* Birthday message */}
@@ -335,7 +335,7 @@ const Candle = ({ onBlowDetected }) => {
             animation: 'pulse 2s infinite'
           }}
         >
-          HAPPY BIRTHDAY MAITHULULUUUUU
+          MAITHULULU DAY PT 19
         </motion.div>
       )}
       
